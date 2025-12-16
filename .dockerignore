@@ -1,0 +1,16 @@
+venv/
+.venv/
+.git
+.dvc
+dvcstore/
+logs/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+docker-compose.yaml
+.env
+data/dataset.csv
+data/dataset.csv.dvc
+models/
