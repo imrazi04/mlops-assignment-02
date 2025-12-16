@@ -33,10 +33,11 @@ def evaluate_model():
 
 with DAG(
     dag_id="mlops_pipeline",
+    schedule="@daily",
     start_date=datetime(2024, 1, 1),
-    schedule_interval=None,
-    catchup=False,
+    catchup=False
 ) as dag:
+
 
     load = PythonOperator(
         task_id="load_data",

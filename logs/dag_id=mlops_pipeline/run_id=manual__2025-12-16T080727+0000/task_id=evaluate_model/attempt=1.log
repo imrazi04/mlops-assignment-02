@@ -1,0 +1,13 @@
+{"timestamp":"2025-12-16T08:08:01.881436Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-16T08:08:01.883661Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/mlops_pipeline.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-16T08:08:05.746624Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/mlops_pipeline.py","lineno":2,"logger":"py.warnings"}
+{"timestamp":"2025-12-16T08:08:05.796910Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2025-12-16T08:08:05.797729Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2025-12-16T08:08:05.798775Z","level":"info","event":"Current task name:evaluate_model","logger":"task.stdout"}
+{"timestamp":"2025-12-16T08:08:05.799556Z","level":"info","event":"Dag name:mlops_pipeline","logger":"task.stdout"}
+{"timestamp":"2025-12-16T08:08:05.806786Z","level":"warning","event":"X does not have valid feature names, but LinearRegression was fitted with feature names","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.12/site-packages/sklearn/utils/validation.py","lineno":2691,"logger":"py.warnings"}
+{"timestamp":"2025-12-16T08:08:05.809310Z","level":"info","event":"Prediction for x=6: [12.]","logger":"task.stdout"}
+{"timestamp":"2025-12-16T08:08:05.811124Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":217}
+{"timestamp":"2025-12-16T08:08:05.856171Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2025-12-16T08:08:05.857018Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2025-12-16T08:08:05.857902Z","level":"info","event":"Task operator:<Task(PythonOperator): evaluate_model>","logger":"task.stdout"}
